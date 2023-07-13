@@ -1,0 +1,494 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+th,
+td,
+fieldset,
+legend {
+    font-family: 'Spoqa Han Sans Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    color: #27282d;
+    font-size: 16px;
+}
+body {
+    margin: 0 10%;
+    background-color: #ffffff;
+}
+fieldset,
+img {
+    border: 0 none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #494139;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+button {
+    border: 0 none;
+    font-family: 'Noto Sans KR', sans-serif, 'Malgun Gothic';
+}
+img {
+    vertical-align: top;
+}
+/* common */
+/*body{background-color: }*/
+.background {
+    width: 100%;
+    background-color: #f6efe7;
+}
+.left {
+    flex-direction: row-reverse;
+    background-color: #fff;
+}
+legend {
+    text-indent: -9999em;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.hgroup h2 {
+    font-size: 1.26em;
+    font-weight: 700;
+}
+.hgroup span {
+    display: block;
+    width: 32px;
+    height: 2.6px;
+    margin-bottom: 10px;
+    background-color: #494139;
+}
+.btn {
+    display: block;
+    width: 150px;
+    color: #fff;
+    text-align: left;
+    font-size: 1em;
+    background-color: #494139;
+    border-radius: 50px;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn.download {
+    background: url(../img/download.svg) #494139 no-repeat 95% 50%/20px 20px;
+}
+.btn.link {
+    background: url(../img/arrow_right.svg) #494139 no-repeat 95% 50%/20px 20px;
+}
+.contents .row {
+    padding: 100px 0;
+}
+.bg_white {
+    background-color: #fff;
+}
+/* .container */
+.row {
+    background-attachment: fixed;
+}
+/* #header #nav */
+#header #nav {
+    padding-top: 10px;
+}
+#header #nav .home {
+    margin-right: auto;
+}
+#header #nav a:hover {
+    color: rgba(73, 65, 57, 0.5);
+}
+
+/* profile */
+.row.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 130px 0;
+    background-image: linear-gradient(45deg, #fff, #f2f2f2, #f0f4ff);
+    margin-top: 30px;
+}
+.row.profile .pro {
+    display: block;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    margin-right: 40px;
+}
+.row.profile .pro img {
+    width: 100%;
+    height: 100%;
+}
+.row.profile .hello {
+    width: 50%;
+}
+
+/* .row.hello */
+.row.hello {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+}
+.hello h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.hello p {
+    width: 70%;
+    word-break: keep-all;
+    margin-top: 24px;
+}
+
+/* #header .mainheader */
+#header .mainheader h1 {
+    padding: 150px 0;
+}
+#header .mainheader h1 span {
+    font-size: 4.8em;
+}
+#header .mainheader h1 strong {
+    display: block;
+    font-size: 4.8em;
+}
+#header .mainheader p {
+    margin-left: auto;
+    width: 50%;
+    font-size: 0.93em;
+    text-align: right;
+}
+
+/* .contents .about_me */
+.contents .about_me {
+    padding: 20px 0;
+}
+.contents .about_me .row {
+    padding: 50px 0;
+}
+/*.contents .about_me .col {padding: 50px 0}*/
+.contents .about_me .profile {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    background-color: #494139;
+    border-radius: 200px;
+    box-shadow: 4px 4px 15px rgb(130, 108, 86, 0.24);
+}
+.contents .about_me .profile .bg {
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 200px;
+}
+.contents .about_me .profile .bg img {
+    width: 100%;
+    height: 100%;
+}
+.contents .about_me .myinfo .txt {
+    font-size: 1.13em;
+}
+.contents .about_me .myinfo .txt:before {
+    content: '- ';
+    color: #494139;
+}
+.contents .about_me .my {
+    margin: auto 0;
+}
+
+.contents .line {
+    display: inline-block;
+    text-align: left;
+    margin: 30px 0;
+    width: 6%;
+    height: 2px;
+    background-color: #27282d;
+}
+
+.contents h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.contents a {
+    display: block;
+    margin: 30px 0;
+}
+.contents a:hover {
+    text-decoration: underline;
+}
+
+/* .contents .portfolio */
+.contents .portfolio {
+    padding: 15px 0;
+}
+.contents .portfolio .col {
+    margin: auto 0;
+    padding: 50px 0;
+}
+.contents .portfolio .bg_box {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgb(130, 108, 86, 0.24);
+}
+.contents .portfolio .bg_box img {
+    width: 100%;
+}
+.contents .portfolio .portfolio_info {
+    padding-left: 100px;
+}
+.contents .portfolio .portfolio_info .portfolio_name {
+    width: 30%;
+    font-size: 1.2em;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.contents .portfolio .portfolio_info .explain {
+    margin-bottom: 10px;
+    font-size: 1.06em;
+    font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+.contents .portfolio .portfolio_info .period {
+    margin: 0;
+    font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+.contents .portfolio .portfolio_info .personal {
+    font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+.contents .portfolio .portfolio_info span {
+    display: block;
+    width: 20%;
+    height: 2.6px;
+    margin-bottom: 10px;
+    background-color: #494139;
+}
+.contents .portfolio .portfolio_info .btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contents .portfolio .portfolio_info .btns .btn {
+    width: 135px;
+}
+.contents .portfolio .portfolio_info .btns .btn:nth-child(2) {
+    margin: 0 10px;
+}
+.contents .portfolio .portfolio_info .btns .btn:last-child {
+    margin-left: 10px;
+}
+.contents .banner {
+    padding: 0 100px;
+}
+.contents .banner .portfolio_info {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+/*.contents .banner .portfolio_info .portfolio_name {width: 15%;}*/
+.contents .banner .portfolio_info .explain {
+    margin-right: auto;
+    padding-top: 2px;
+}
+.contents .banner .row {
+    padding: 0;
+}
+.contents .banner .row .col {
+    padding: 0;
+}
+.contents .banner .tumb {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 220px;
+    background: no-repeat 50% 50% / 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgb(130, 108, 86, 0.24);
+}
+.contents .banner .col:nth-child(1) .tumb {
+    background-image: url(../img/design04.jpg);
+}
+.contents .banner .col:nth-child(2) .tumb {
+    background-image: url(../img/design02.jpg);
+}
+.contents .banner .col:nth-child(3) .tumb {
+    background-image: url(../img/design01.jpg);
+}
+.contents .banner .row:nth-child(3) .col:nth-child(1) .tumb {
+    background-image: url(../img/design03.jpg);
+}
+.contents .banner .row:nth-child(3) .col:nth-child(2) .tumb {
+    background-image: url(../img/design05.jpg);
+}
+.contents .banner .row:nth-child(3) .col:nth-child(3) .tumb {
+    background-image: url(../img/design06.jpg);
+}
+.contents .banner .row:nth-child(4) .col:nth-child(1) .tumb {
+    background-image: url(../img/design07.jpg);
+}
+.contents .banner .row:nth-child(4) .col:nth-child(2) .tumb {
+    background-image: url(../img/design08.jpg);
+}
+.contents .banner .row:nth-child(4) .col:nth-child(3) .tumb {
+    background-image: url(../img/design09.jpg);
+}
+.contents .banner .row:nth-child(5) .col:nth-child(1) .tumb {
+    background-image: url(../img/design10.jpg);
+}
+.contents .banner .row:nth-child(5) .col:nth-child(1) .tumb_hidden img {
+    width: 50%;
+}
+.contents .banner .row:nth-child(5) .col:nth-child(2) .tumb {
+    background-image: url(../img/blind.jpg);
+}
+.contents .banner .row:nth-child(5) .col:nth-child(3) .tumb {
+    background-image: url(../img/blind.jpg);
+}
+/*.contents .banner .row:nth-child(4) {padding-bottom: 80px}*/
+/*.contents .banner a {padding-top: 56%}*/
+.contents .banner .tumb a {
+    display: block;
+    width: 100%;
+}
+.contents .banner .tumb a img {
+    width: 100%;
+}
+.contents .banner .tumb .event {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-family: 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    color: #fff;
+    line-height: 55px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/*.contents .banner .tumb_hidden {display: none}*/
+.contents .banner .tumb_hidden .bg_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 30;
+}
+.contents .banner .tumb_hidden img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* .contents .contact_me */
+.contents .contact_me {
+    padding: 20px 0 50px 0;
+}
+.contents .contact_me col {
+    padding: 75px 0;
+}
+.contents .contact_me .user_txt {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+.contents .contact_me label {
+    display: inline-block;
+    width: 40%;
+}
+.contents .contact_me input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0 none;
+    border-bottom: 1.5px solid #494139;
+    background-color: rgba(256, 256, 256, 0);
+}
+.contents .contact_me .bg_group {
+    text-align: center;
+}
+.contents .contact_me #user_txt {
+    width: 100%;
+}
+.contents .contact_me button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Noto Serif KR', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif;
+    font-size: 1em;
+    background-color: #494139;
+    border-radius: 50px;
+}
+/*.contents .contact_me .contact_myinfo {margin: auto 0; border-left: 1.5px solid #494139}*/
+.contents .contact_me .small {
+    margin: 0;
+    color: rgb(73, 65, 57, 0.8);
+    font-weight: 700;
+}
+.contents .contact_me .txt_info {
+    font-size: 1.06em;
+}
+
+.link_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999em;
+    background: url(../img/top.svg) rgb(216, 201, 181) no-repeat 50% 50% / 30px 30px;
+}
+
+/* #footer */
+.footer {
+    background-color: #87817b;
+    padding: 50px 0;
+}
+.footer #footer {
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+    color: #e5e5e5;
+    font-size: 0.93em;
+}
