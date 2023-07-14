@@ -133,9 +133,25 @@ legend {
     flex-direction: row;
     justify-content: center;
     padding: 130px 0;
-    background-image: linear-gradient(45deg, #fff, #f2f2f2, #f0f4ff);
+    background-image: linear-gradient(45deg, #fff, #f2f2f2, #c8d0e7);
+    animation: gradient 15s ease infinite;
     margin-top: 30px;
+    background-size: 400% 400%;
+    border-radius: 40px;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 70%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+d
 .row.profile .pro {
     display: block;
     width: 30%;
@@ -156,13 +172,15 @@ legend {
     display: flex;
     flex-direction: row;
     padding: 100px 0;
+    text-align: center;
+    justify-items: center;
 }
 .hello h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    margin:0 auto;
 }
 .hello p {
-    width: 70%;
     word-break: keep-all;
     margin-top: 24px;
 }
@@ -231,7 +249,7 @@ legend {
     display: inline-block;
     text-align: left;
     margin: 30px 0;
-    width: 6%;
+    width: 90%;
     height: 2px;
     background-color: #27282d;
 }
