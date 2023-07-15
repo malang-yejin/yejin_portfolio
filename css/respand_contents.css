@@ -4,26 +4,24 @@
     }
 }
 @media screen and (max-width: 992px) {
-    .contents .portfolio .portfolio_info .portfolio_name {
+    .explain .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .explain .row .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .contents {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
-    .contents .portfolio .portfolio_info .btns .link:nth-child(1) {
-        width: 100px;
-    }
-    .contents .portfolio .portfolio_info .btns .link:nth-child(2) {
-        width: 70px;
-        background: url(../img/sitemap.svg) #494139 no-repeat 50% 50% / 25px 25px;
-        text-indent: -9999em;
-    }
-    .contents .portfolio .portfolio_info .btns .link:nth-child(3) {
-        width: 70px;
-        background: url(../img/plan.svg) #494139 no-repeat 55% 50% / 25px 25px;
-        text-indent: -9999em;
-    }
-    .contents .portfolio .portfolio_info .btns .link:last-child {
-        width: 70px;
-        background: url(../img/styleguide.svg) #494139 no-repeat 50% 50% / 25px 25px;
-        text-indent: -9999em;
+    .contents div {
+        width: 100% !important;
     }
 }
 @media screen and (min-width: 769px) {
