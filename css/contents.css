@@ -236,3 +236,15 @@ legend {
     color: #3b3e46;
     margin-top: 30px;
 }
+
+.image img {
+    margin-top: 30px;
+}
+.download a {
+    display: block;
+    padding: 16px 50px;
+    border: 1px solid #3b3e46;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}
